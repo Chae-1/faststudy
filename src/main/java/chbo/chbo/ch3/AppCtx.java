@@ -2,8 +2,10 @@ package chbo.chbo.ch3;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
 
 @Configuration
+@Import(AppConf2.class)
 public class AppCtx {
     @Bean
     public MemberDao memberDao() {
